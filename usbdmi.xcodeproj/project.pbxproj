@@ -14,6 +14,9 @@
 		1DAE119F2F19750F0070D714 /* usbdmiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE119E2F19750F0070D714 /* usbdmiTests.swift */; };
 		1DAE11A92F19750F0070D714 /* usbdmiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11A82F19750F0070D714 /* usbdmiUITests.swift */; };
 		1DAE11AB2F19750F0070D714 /* usbdmiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11AA2F19750F0070D714 /* usbdmiUITestsLaunchTests.swift */; };
+		1DAE11B92F1979240070D714 /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11B82F1979240070D714 /* CaptureManager.swift */; };
+		1DAE11BB2F1979890070D714 /* CapturePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11BA2F1979890070D714 /* CapturePreview.swift */; };
+		1DAE11BD2F1979AC0070D714 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11BC2F1979AC0070D714 /* PreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		1DAE11A42F19750F0070D714 /* usbdmiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usbdmiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAE11A82F19750F0070D714 /* usbdmiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usbdmiUITests.swift; sourceTree = "<group>"; };
 		1DAE11AA2F19750F0070D714 /* usbdmiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usbdmiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1DAE11B72F19768F0070D714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1DAE11B82F1979240070D714 /* CaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
+		1DAE11BA2F1979890070D714 /* CapturePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreview.swift; sourceTree = "<group>"; };
+		1DAE11BC2F1979AC0070D714 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +102,11 @@
 		1DAE118B2F19750C0070D714 /* usbdmi */ = {
 			isa = PBXGroup;
 			children = (
+				1DAE11B72F19768F0070D714 /* Info.plist */,
 				1DAE118C2F19750C0070D714 /* usbdmiApp.swift */,
+				1DAE11B82F1979240070D714 /* CaptureManager.swift */,
+				1DAE11BA2F1979890070D714 /* CapturePreview.swift */,
+				1DAE11BC2F1979AC0070D714 /* PreviewView.swift */,
 				1DAE118E2F19750C0070D714 /* ContentView.swift */,
 				1DAE11902F19750E0070D714 /* Assets.xcassets */,
 				1DAE11952F19750E0070D714 /* usbdmi.entitlements */,
@@ -259,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DAE11BD2F1979AC0070D714 /* PreviewView.swift in Sources */,
 				1DAE118F2F19750C0070D714 /* ContentView.swift in Sources */,
+				1DAE11BB2F1979890070D714 /* CapturePreview.swift in Sources */,
 				1DAE118D2F19750C0070D714 /* usbdmiApp.swift in Sources */,
+				1DAE11B92F1979240070D714 /* CaptureManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +443,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = usbdmi/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +471,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = usbdmi/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
