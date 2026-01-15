@@ -17,6 +17,8 @@
 		1DAE11B92F1979240070D714 /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11B82F1979240070D714 /* CaptureManager.swift */; };
 		1DAE11BB2F1979890070D714 /* CapturePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11BA2F1979890070D714 /* CapturePreview.swift */; };
 		1DAE11BD2F1979AC0070D714 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11BC2F1979AC0070D714 /* PreviewView.swift */; };
+		1DAE11BF2F197CA80070D714 /* SampleBufferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11BE2F197CA80070D714 /* SampleBufferView.swift */; };
+		1DAE11C12F197CE90070D714 /* LowLatencyPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE11C02F197CE90070D714 /* LowLatencyPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		1DAE11B82F1979240070D714 /* CaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
 		1DAE11BA2F1979890070D714 /* CapturePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreview.swift; sourceTree = "<group>"; };
 		1DAE11BC2F1979AC0070D714 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		1DAE11BE2F197CA80070D714 /* SampleBufferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBufferView.swift; sourceTree = "<group>"; };
+		1DAE11C02F197CE90070D714 /* LowLatencyPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowLatencyPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,13 @@
 			isa = PBXGroup;
 			children = (
 				1DAE11B72F19768F0070D714 /* Info.plist */,
-				1DAE118C2F19750C0070D714 /* usbdmiApp.swift */,
 				1DAE11B82F1979240070D714 /* CaptureManager.swift */,
 				1DAE11BA2F1979890070D714 /* CapturePreview.swift */,
+				1DAE11BE2F197CA80070D714 /* SampleBufferView.swift */,
+				1DAE11C02F197CE90070D714 /* LowLatencyPreview.swift */,
 				1DAE11BC2F1979AC0070D714 /* PreviewView.swift */,
 				1DAE118E2F19750C0070D714 /* ContentView.swift */,
+				1DAE118C2F19750C0070D714 /* usbdmiApp.swift */,
 				1DAE11902F19750E0070D714 /* Assets.xcassets */,
 				1DAE11952F19750E0070D714 /* usbdmi.entitlements */,
 				1DAE11922F19750E0070D714 /* Preview Content */,
@@ -272,6 +278,8 @@
 			files = (
 				1DAE11BD2F1979AC0070D714 /* PreviewView.swift in Sources */,
 				1DAE118F2F19750C0070D714 /* ContentView.swift in Sources */,
+				1DAE11C12F197CE90070D714 /* LowLatencyPreview.swift in Sources */,
+				1DAE11BF2F197CA80070D714 /* SampleBufferView.swift in Sources */,
 				1DAE11BB2F1979890070D714 /* CapturePreview.swift in Sources */,
 				1DAE118D2F19750C0070D714 /* usbdmiApp.swift in Sources */,
 				1DAE11B92F1979240070D714 /* CaptureManager.swift in Sources */,

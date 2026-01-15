@@ -12,22 +12,25 @@ struct ContentView: View {
     @StateObject private var captureManager = CaptureManager()
 
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            CapturePreview(session: captureManager.session)
-                .onAppear {
-                    do {
-                        try captureManager.start()
-                    } catch {
-                        print("Capture error:", error)
-                    }
+        CapturePreview(session: captureManager.session)
+            .onAppear {
+                do {
+                    try captureManager.start()
+                } catch {
+                    print("Capture error:", error)
                 }
-                .frame(minWidth: 640, minHeight: 480)
-        }
-        .padding()
+            }
+        /*LowLatencyPreview(displayLayer: captureManager.displayLayer)
+            .onAppear {
+                do {
+                    try captureManager.start()
+                } catch {
+                    print(error)
+                }
+            }*/
+            .frame(minWidth: 640, minHeight: 480)
+            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+            .background(in: .rect, fillStyle: .init())
     }
 }
 
