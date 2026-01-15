@@ -20,14 +20,6 @@ struct ContentView: View {
                     print("Capture error:", error)
                 }
             }
-        /*LowLatencyPreview(displayLayer: captureManager.displayLayer)
-            .onAppear {
-                do {
-                    try captureManager.start()
-                } catch {
-                    print(error)
-                }
-            }*/
             .frame(minWidth: 640, minHeight: 480)
             .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             .background(in: .rect, fillStyle: .init())
